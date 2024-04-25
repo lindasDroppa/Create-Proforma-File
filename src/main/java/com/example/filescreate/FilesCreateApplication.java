@@ -506,9 +506,9 @@ public class FilesCreateApplication {
         String skynetBaseURL="https://uat.skynet.co.za:3227/api/";
         String url=skynetBaseURL+"Security/GetSecurityToken";
         TokenRequest request=new TokenRequest();
-        request.SystemId="2";
-        request.Password="Dr0ppaT3st76@0";
-        request.UserName="DroppaTest";
+        request.SystemId="";
+        request.Password="";
+        request.UserName="";
 
         String response= WebClient.create(url)
                 .post()
@@ -535,7 +535,7 @@ public class FilesCreateApplication {
 
         skynetQouteRequest.parcelList = list;
         skynetQouteRequest.securityToken =res.getSecurityToken();
-        skynetQouteRequest.accountNumber = "J99103";
+        skynetQouteRequest.accountNumber = "";
         skynetQouteRequest.fromCity = "Woodmead";
         skynetQouteRequest.fromCityPostalCode = "2191";
         skynetQouteRequest.toCity = "ERAND";
